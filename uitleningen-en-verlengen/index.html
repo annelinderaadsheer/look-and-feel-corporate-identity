@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Link to boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link to JavaScript script -->
+    <script src="../scripts/script.js" defer></script>
+
+    <title>Mijn OBA - Uitleningen en verlengen</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../image/Unknown.jpg" alt="Gebruiker-foto">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Mark Vos</span>
+                    <span class="profession">5 jaar lid</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul>
+                    <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Zoek...">
+                    </li>
+                </ul>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../welkom/">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Welkom</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../leeslijst/">
+                            <i class='bx bx-list-ul icon'></i>
+                            <span class="text nav-text">Leeslijst</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a class="active" href="../uitleningen-en-verlengen/">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text-long nav-text">Uitleningen en verlengen</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../uitleengeschiedenis/">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Uitleengeschiedenis</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../betaalgeschiedenis/">
+                            <i class='bx bx-pie-chart-alt icon'></i>
+                            <span class="text nav-text">Betaalgeschiedenis</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../reserveringen/">
+                            <i class='bx bx-heart icon'></i>
+                            <span class="text nav-text">Reserveringen</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../despositos/">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Desposito's</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../tellerstand-abonnement/">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Tellerstand abonnement</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <ul>
+                    <li class="">
+                        <a href="../mijn-profielen/">
+                            <i class='bx bx-user-circle icon'></i>
+                            <span class="text nav-text">Profiel veranderen</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="../">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Uitloggen</span>
+                        </a>
+                    </li>
+
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text">Dark mode</span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="home">
+        <div class="text"><img src="../image/oba_20.png" alt=""></div>
+
+        <section class="container">
+            <article class="intro">
+                <h1>Uitleningen en verlengen</h1>
+                <p>U kunt hier materialen verlengen voor de gebruikelijke leenperiode van het materiaal. Deze gaat in op
+                    de dag waarop u verlengt. Het is niet zinvol om materialen tweemaal snel achter elkaar te verlengen.
+                    Onze medewerkers kunnen de materialen wel voor een langere periode verlengen, bijvoorbeeld als u op
+                    vakantie gaat.</p>
+                <ul>
+                    <h3>U kunt niet verlengen:</h3>
+                    <li>Items die vandaag geleend of verlengd zijn.</li>
+                    <li>Items die al tweemaal verlengd zijn.</li>
+                    <li>Items die al de maximale uitleentermijn(=3 x de standaard leenperiode) in uw bezit zijn.</li>
+                    <li>Items die gereseveerd zijn door een andere lener.</li>
+                </ul>
+            </article>
+            <article class="wrapper">
+                <section class="filters">
+                    <label for="filters">Filters:</label>
+                    <select name="filters" id="filters">
+                        <option value="1">Uitleendatum (aflopend)</option>
+                        <option value="2">Uitleendatum (oplopend)</option>
+                        <option value="3">A-Z</option>
+                        <option value="4">Z-A</option>
+                    </select>
+                    <button id="left" class="fa-solid fa-angle-left"></button>
+                    <button id="right" class="fa-solid fa-angle-right"></button>
+                </section>
+                <section class="carousel">
+                    <article>
+                        <img class="card img" src="../image/book-1.png" alt="">
+                        <h3>Naam boek</h3>
+                        <p>Uitleendatum: 23-08-2023</p>
+                        <p>Verloopt over 11 dagen</p>
+                    </article>
+                    <article>
+                        <img class="card img" src="../image/book-2.png" alt="">
+                        <h3>Naam boek</h3>
+                        <p>Uitleendatum: 3-08-2023</p>
+                        <p>Verloopt over 31 dagen</p>
+                    </article>
+                    <article>
+                        <img class="card img" src="../image/book-3.png" alt="">
+                        <h3>Naam boek</h3>
+                        <p>Uitleendatum: 15-08-2023</p>
+                        <p>Verloopt over 23 dagen</p>
+                    </article>
+                    <article>
+                        <img class="card img" src="../image/book-4.png" alt="">
+                        <h3>Naam boek</h3>
+                        <p>Uitleendatum: 23-08-2023</p>
+                        <p>Verloopt over 11 dagen</p>
+                    </article>
+                    <article>
+                        <img class="card img" src="../image/book-5.png" alt="">
+                        <h3>Naam boek</h3>
+                        <p>Uitleendatum: 23-08-2023</p>
+                        <p>Verloopt over 11 dagen</p>
+                    </article>
+                    <article>
+                        <img class="card img" src="../image/book-6.png" alt="">
+                        <h3>Naam boek</h3>
+                        <p>Uitleendatum: 23-08-2023</p>
+                        <p>Verloopt over 11 dagen</p>
+                    </article>
+                    <article>
+                        <img class="card img" src="../image/book-7.png" alt="">
+                        <h3>Naam boek</h3>
+                        <p>Uitleendatum: 19-07-2023</p>
+                        <p>Verloopt over 9 dagen</p>
+                    </article>
+                    <article>
+                        <img class="card img" src="../image/book-8.png" alt="">
+                        <h3>Naam boek</h3>
+                        <p>Uitleendatum: 13-08-2023</p>
+                        <p>Verloopt over 23 dagen</p>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

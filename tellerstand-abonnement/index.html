@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Link to boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link to JavaScript script -->
+    <script src="../scripts/script.js" defer></script>
+
+    <title>Mijn OBA - Tellerstand abonnement</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../image/Unknown.jpg" alt="Gebruiker-foto">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Mark Vos</span>
+                    <span class="profession">5 jaar lid</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul>
+                    <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Zoek...">
+                    </li>
+                </ul>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../welkom/">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Welkom</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../leeslijst/">
+                            <i class='bx bx-list-ul icon'></i>
+                            <span class="text nav-text">Leeslijst</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../uitleningen-en-verlengen/">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text-long nav-text">Uitleningen en verlengen</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../uitleengeschiedenis/">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Uitleengeschiedenis</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../betaalgeschiedenis/">
+                            <i class='bx bx-pie-chart-alt icon'></i>
+                            <span class="text nav-text">Betaalgeschiedenis</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../reserveringen/">
+                            <i class='bx bx-heart icon'></i>
+                            <span class="text nav-text">Reserveringen</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../despositos/">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Desposito's</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a class="active" href="../tellerstand-abonnement/">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Tellerstand abonnement</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <ul>
+                    <li class="">
+                        <a href="../mijn-profielen/">
+                            <i class='bx bx-user-circle icon'></i>
+                            <span class="text nav-text">Profiel veranderen</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="../">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Uitloggen</span>
+                        </a>
+                    </li>
+
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text">Dark mode</span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="home">
+        <div class="text"><img src="../image/oba_20.png" alt=""></div>
+        <section class="container">
+            <article class="intro">
+                <h1>Tellerstand abonnement</h1>
+                <ul>
+                    <h3>In onderstaand overzicht kunt u zien:</h3>
+                    <li>Hoeveel items u nog kunt lenen met uw abonnement (standaard).</li>
+                    <li>Hoeveel cd's/dvd's u nog gratis kunt lenen met uw abonnement. (plus)</li>
+                    <li>De transacties die tot vandaag ten laste van uw abonnement zijn afgeboekt.</li>
+                </ul>
+            </article>
+            <table>
+                <tr>
+                    <th>Groepsoverzicht Groepnaam</th>
+                    <th>max. uitleningen</th>
+                    <th>Max. vrije uitleningen</th>
+                    <th>Max. vrije verlengingen</th>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>9998</td>
+                    <td>10</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>Barcode</th>
+                    <th>Transactie</th>
+                    <th>Transactie datum</th>
+                    <th>Datum retour</th>
+                </tr>
+                <tr>
+                    <td>1000234023</td>
+                    <td>Uitlenen</td>
+                    <td>23 Aug 2022</td>
+                    <td>04 Okt 2022</td>
+                </tr>
+                <tr>
+                    <th>Titel</th>
+                    <th>Materiaal</th>
+                    <th>Locatie</th>
+                    <th>Soort eenheid</th>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>DVDSPM</td>
+                    <td>REGIO SPD/CEN</td>
+                    <td>DVDSPM teller leenpas+</td>
+                </tr>
+
+            </table>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

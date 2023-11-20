@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Link to boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link to JavaScript script -->
+    <script src="../scripts/script.js" defer></script>
+
+    <title>Mijn OBA - Betaalgeschiedenis</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../image/Unknown.jpg" alt="Gebruiker-foto">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Mark Vos</span>
+                    <span class="profession">5 jaar lid</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul>
+                    <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Zoek...">
+                    </li>
+                </ul>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../welkom/">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Welkom</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../leeslijst/">
+                            <i class='bx bx-list-ul icon'></i>
+                            <span class="text nav-text">Leeslijst</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../uitleningen-en-verlengen/">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text-long nav-text">Uitleningen en verlengen</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../uitleengeschiedenis/">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Uitleengeschiedenis</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a class="active" href="../betaalgeschiedenis/">
+                            <i class='bx bx-pie-chart-alt icon'></i>
+                            <span class="text nav-text">Betaalgeschiedenis</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../reserveringen/">
+                            <i class='bx bx-heart icon'></i>
+                            <span class="text nav-text">Reserveringen</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../despositos/">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Desposito's</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../tellerstand-abonnement/">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Tellerstand abonnement</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <ul>
+                    <li class="">
+                        <a href="../mijn-profielen/">
+                            <i class='bx bx-user-circle icon'></i>
+                            <span class="text nav-text">Profiel veranderen</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="../">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Uitloggen</span>
+                        </a>
+                    </li>
+
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text">Dark mode</span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="home">
+        <div class="text"><img src="../image/oba_20.png" alt=""></div>
+        <section class="container">
+            <article class="intro">
+                <h1>Betaalgeschiedenis</h1>
+            </article>
+            <table class="betaal-overzicht">
+                <tr>
+                    <th>Overzicht</th>
+                    <th>Bedrag</th>
+                </tr>
+                <tr>
+                    <td>Betaling uit desposito</td>
+                    <td>€7,00</td>
+                </tr>
+                <tr>
+                    <td>Boete</td>
+                    <td>€5,60</td>
+                </tr>
+                <tr>
+                    <td>Contributie</td>
+                    <td>€20,00</td>
+                </tr>
+                <tr>
+                    <td>Inschrijvingen</td>
+                    <td>€1,00</td>
+                </tr>
+                <tr>
+                    <td>Verkopen</td>
+                    <td>€21,00</td>
+                </tr>
+                <tr>
+                    <td>Totaalbedrag</td>
+                    <td>€54,60</td>
+                </tr>
+
+            </table>
+            <table>
+                <tr>
+                    <th>Soort betaling</th>
+                    <th>Betaaldatum</th>
+                    <th>Bedrag</th>
+                    <th>Betalingswijze</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Betaling uit desposito</td>
+                    <td>06 Dec 2017</td>
+                    <td>1,00</td>
+                    <td>Ontv. Betaling via credit-/debet-kaart</td>
+                    <td>10000202034</td>
+                </tr>
+                <tr>
+                    <td>Betaling uit desposito</td>
+                    <td>08 Jun 2017</td>
+                    <td>1,00</td>
+                    <td>Ontv. Betaling via credit-/debet-kaart</td>
+                    <td>10000202034</td>
+                </tr>
+                <tr>
+                    <td>Betaling uit desposito</td>
+                    <td>12 Nov 2015</td>
+                    <td>1,00</td>
+                    <td>Ontv. Betaling via credit-/debet-kaart</td>
+                    <td>10000202034</td>
+                </tr>
+                <tr>
+                    <td>Betaling uit desposito</td>
+                    <td>24 Okt 2016</td>
+                    <td>1,00</td>
+                    <td>Ontv. Betaling via credit-/debet-kaart</td>
+                    <td>10000202034</td>
+                </tr>
+                <tr>
+                    <td>Betaling uit desposito</td>
+                    <td>29 Aug 2016</td>
+                    <td>1,00</td>
+                    <td>Ontv. Betaling via credit-/debet-kaart</td>
+                    <td>10000202034</td>
+                </tr>
+                <tr>
+                    <td>Betaling uit desposito</td>
+                    <td>29 Aug 2015</td>
+                    <td>1,00</td>
+                    <td>Ontv. Betaling via credit-/debet-kaart</td>
+                    <td>10000202034</td>
+                </tr>
+                <tr>
+                    <td>Betaling uit desposito</td>
+                    <td>06 Dec 2017</td>
+                    <td>1,00</td>
+                    <td>Ontv. Betaling via credit-/debet-kaart</td>
+                    <td>10000202034</td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
