@@ -119,18 +119,6 @@
                             <span class="text nav-text">Uitloggen</span>
                         </a>
                     </li>
-
-                    <li class="mode">
-                        <div class="sun-moon">
-                            <i class='bx bx-moon icon moon'></i>
-                            <i class='bx bx-sun icon sun'></i>
-                        </div>
-                        <span class="mode-text text">Dark mode</span>
-
-                        <div class="toggle-switch">
-                            <span class="switch"></span>
-                        </div>
-                    </li>
                 </ul>
 
             </div>
@@ -138,59 +126,50 @@
 
     </nav>
 
-    <div class="home">
-        <div class="text"><img src="../image/oba_20.png" alt=""></div>
+    <section class="container">
+        <h1>Welkom bij Mijn OBA!</h1>
+        <p>Hier kunt u uw materialen
+            verlengen, reserveringen bekijken en uw uitleengeschiedenis raadplegen.</p>
+        <h3>Primary Button</h3>
+        <a href="#"><button class="btn">Ontdek meer <i class='bx bx-right-arrow-alt'></i></button></a>
+        <h3>Theme Button</h3>
+        <a href="#"><button class="btn themebtn">Inloggen</button></a>
+        <h3>Link Button</h3>
+        <a href="#"><button class="btn linkbtn">Lees meer nieuws van de OBA <i
+                    class='bx bx-right-arrow-alt'></i></button></a>
+        <hr>
+        <h2>Forms</h2>
+        <h3>Search Form</h3>
+        <form class="searchForm">
+            <div>
+                <input type="radio" name="searchForm" value="catalog" checked="checked">
+                <label for="catalog">Zoeken in de catalogus</label><br>
+                <input type="radio" name="searchForm" value="website">
+                <label for="website">Zoeken binnen de site</label>
+            </div>
+            <input class="input-field" value="" type="text" name="query" placeholder="Waar ben je naar op zoek?">
+            <button type="submit" class="btn">Zoeken <i class='bx bx-right-arrow-alt'></i></button>
+        </form>
+        <h3>Filter Form</h3>
+        <select name="filters" id="filters">
+            <option value="1">Uitleendatum (aflopend)</option>
+            <option value="2">Uitleendatum (oplopend)</option>
+            <option value="3">A-Z</option>
+            <option value="4">Z-A</option>
+        </select>
+        <h3>Input Form</h3>
+        <div class="input-wrapper">
+            <div class="input-group">
+                <label for="Gebruikersnaam">Gebruikersnaam</label>
+                <input type="text" id="username" class="input-field" placeholder="Gebruikersnaam">
+            </div>
 
-        <section class="container">
-            <article class="intro">
-                <h1>Welkom</h1>
-                <p>Welkom op uw persoonlijke pagina van de website van de OBA op deze pagina kunt u uw materialen
-                    verlengen, reserveringen bekijken en uw uitleengeschiedenis raadplegen.</p>
-            </article>
-            <article class="navigationList">
-                <a href="../leeslijst/">
-                    <i class='bx bx-list-ul icon'></i>
-                    <h3>Leeslijst</h3>
-                </a>
-
-                <a href="../uitleningen-en-verlengen/">
-                    <i class='bx bx-bar-chart-alt-2 icon'></i>
-                    <h3>Uitleningen en verlengen</h3>
-                </a>
-
-                <a href="../uitleengeschiedenis/">
-                    <i class='bx bx-bell icon'></i>
-                    <h3>Uitleengeschiedenis</h3>
-                </a>
-
-                <a href="../betaalgeschiedenis/">
-                    <i class='bx bx-pie-chart-alt icon'></i>
-                    <h3>Betaalgeschiedenis</h3>
-                </a>
-
-                <a href="../reserveringen/">
-                    <i class='bx bx-heart icon'></i>
-                    <h3>Reserveringen</h3>
-                </a>
-
-                <a href="../despositos/">
-                    <i class='bx bx-wallet icon'></i>
-                    <h3>Desposito's</h3>
-                </a>
-
-                <a href="../tellerstand-abonnement/">
-                    <i class='bx bx-wallet icon'></i>
-                    <h3>Tellerstand abonnement</h3>
-                </a>
-
-                <a href="../login/">
-                    <i class='bx bx-log-out icon'></i>
-                    <h3>Uitloggen</h3>
-                </a>
-            </article>
-        </section>
-
-    </div>
+            <div class="input-group">
+                <label for="Wachtwoord">Wachtwoord</label>
+                <input type="password" id="password" class="input-field" placeholder="Wachtwoord">
+            </div>
+        </div>
+    </section>
 
 </body>
 
