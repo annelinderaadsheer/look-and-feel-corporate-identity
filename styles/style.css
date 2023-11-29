@@ -81,11 +81,19 @@ body {
     color: #fff;
 }
 
-h2,
+h1 {
+    font-size: 2.25em;
+}
+
+/* h2,
 h3,
 h4,
 h5,
 h6,
+p {
+    margin: revert;
+} */
+
 p {
     margin: revert;
 }
@@ -243,7 +251,7 @@ header .image-text .profession {
 .sidebar li.search-box,
 select#filters {
     border-radius: 6px;
-    background-color: var(--primary-color-light);
+    background-color: var(--quaternary--color);
     cursor: pointer;
     transition: var(--tran-05);
 }
@@ -376,7 +384,6 @@ button {
     font-weight: var(--primary-weight);
     transition: var(--primary-transition);
     cursor: pointer;
-    margin-bottom: var(--primary-space);
     padding-inline: var(--primary-space);
 }
 
@@ -416,7 +423,7 @@ button:hover {
     font-size: var(--small-text);
     transition: var(--primary-transition);
     border-radius: var(--button-radius);
-    margin-bottom: var(--secondary-space);
+    margin-bottom: var(--primary-space);
 }
 
 .input-group {
@@ -435,7 +442,6 @@ select {
     border-radius: var(--button-radius);
     transition: var(--primary-transition);
     padding: var(--primary-space);
-    margin-bottom: var(--secondary-space);
 }
 
 select option {
@@ -458,10 +464,10 @@ select option {
 /* Carousel */
 #slider-container {
     width: auto;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .slider-box {
@@ -575,8 +581,57 @@ select option {
     cursor: pointer;
     text-decoration: unset;
 }
-
 /* EINDE LOGIN PAGINA */
+
+/* Start page: Welkom/Home */
+
+.searchContainer {
+    margin-block: var(--secondary-space);
+}
+
+/* End page: Welkom/Home */
+
+/* Start page: Leeslijst */
+section.leeslijstParent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+    margin-bottom: var(--secondary-space);
+}
+
+.leeslijstParent article {
+    background-color: var(--quaternary--color);
+    border-radius: var(--button-radius);
+    padding: 15px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.leeslijstParent article img {
+    max-height: 200px;
+}
+
+.leeslijstParent .bx {
+    color: var(--primary-color);
+}
+
+/* End page: Leeslijst */
+
+/* Start page: uitleningen en verlengen */
+
+.filters {
+    right: calc(0em + var(--tertiary-space));
+    position: absolute;
+    z-index: 2;
+}
+
+.verlengenLijst {
+    margin-top: var(--secondary-space);
+}
+
+/* End page: uitleningen en verlengen */
+
 
 /* ANNELINDE START */
 
@@ -616,6 +671,9 @@ select option {
 
     .swiper-slide {
         width: 230px !important;
+    }
+    .filters {
+        right: unset;
     }
 }
 

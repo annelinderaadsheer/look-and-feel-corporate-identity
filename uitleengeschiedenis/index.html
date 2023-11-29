@@ -130,9 +130,15 @@
     </nav>
 
     <section class="container">
-        <h1>Titel text</h1>
-        <p>Hier kunt u uw materialen
-            verlengen, reserveringen bekijken en uw uitleengeschiedenis raadplegen.</p>
+        <article>
+            <h1>Uitleengeschiedenis</h1>
+            <ul class="verlengenLijst">
+                <h2>Uitleen informatie:</h2>
+                <li>Laatste uitleendatum: 23-08-2023</li>
+                <li>Totaal uitleningen: 132</li>
+                <li>Totaal reserveringen: 4</li>
+            </ul>
+        </article>
         <section id="slider-container">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -265,7 +271,6 @@
                                 <a href="#"><button class="btn">Meer informatie<i
                                             class='bx bx-right-arrow-alt'></i></button></a>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -277,6 +282,7 @@
                 effect: "coverflow",
                 grabCursor: true,
                 centeredSlides: true,
+                loop: true,
                 slidesPerView: "auto",
                 coverflowEffect: {
                     rotate: 0,
