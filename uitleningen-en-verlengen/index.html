@@ -9,12 +9,14 @@
 
     <!-- Link to CSS -->
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/swiper.min.css">
 
     <!-- Link to boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Link to JavaScript script -->
     <script src="../scripts/script.js" defer></script>
+    <script src="../scripts/swiper.min.js"></script>
 
     <title>Mijn OBA - Uitleningen en verlengen</title>
 </head>
@@ -126,88 +128,185 @@
         </div>
 
     </nav>
-
-    <div class="home">
-        <div class="text"><img src="../image/oba_20.png" alt=""></div>
-
+            
         <section class="container">
-            <article class="intro">
+            <article>
                 <h1>Uitleningen en verlengen</h1>
-                <p>U kunt hier materialen verlengen voor de gebruikelijke leenperiode van het materiaal. Deze gaat in op
-                    de dag waarop u verlengt. Het is niet zinvol om materialen tweemaal snel achter elkaar te verlengen.
-                    Onze medewerkers kunnen de materialen wel voor een langere periode verlengen, bijvoorbeeld als u op
-                    vakantie gaat.</p>
-                <ul>
-                    <h3>U kunt niet verlengen:</h3>
+                <ul class="verlengenLijst">
+                    <h2>U kunt niet verlengen bij:</h2>
                     <li>Items die vandaag geleend of verlengd zijn.</li>
                     <li>Items die al tweemaal verlengd zijn.</li>
                     <li>Items die al de maximale uitleentermijn(=3 x de standaard leenperiode) in uw bezit zijn.</li>
                     <li>Items die gereseveerd zijn door een andere lener.</li>
                 </ul>
             </article>
-            <article class="wrapper">
-                <section class="filters">
-                    <label for="filters">Filters:</label>
-                    <select name="filters" id="filters">
-                        <option value="1">Uitleendatum (aflopend)</option>
-                        <option value="2">Uitleendatum (oplopend)</option>
-                        <option value="3">A-Z</option>
-                        <option value="4">Z-A</option>
-                    </select>
-                    <button id="left" class="fa-solid fa-angle-left"></button>
-                    <button id="right" class="fa-solid fa-angle-right"></button>
-                </section>
-                <section class="carousel">
-                    <article>
-                        <img class="card img" src="../image/book-1.png" alt="">
-                        <h3>Naam boek</h3>
-                        <p>Uitleendatum: 23-08-2023</p>
-                        <p>Verloopt over 11 dagen</p>
-                    </article>
-                    <article>
-                        <img class="card img" src="../image/book-2.png" alt="">
-                        <h3>Naam boek</h3>
-                        <p>Uitleendatum: 3-08-2023</p>
-                        <p>Verloopt over 31 dagen</p>
-                    </article>
-                    <article>
-                        <img class="card img" src="../image/book-3.png" alt="">
-                        <h3>Naam boek</h3>
-                        <p>Uitleendatum: 15-08-2023</p>
-                        <p>Verloopt over 23 dagen</p>
-                    </article>
-                    <article>
-                        <img class="card img" src="../image/book-4.png" alt="">
-                        <h3>Naam boek</h3>
-                        <p>Uitleendatum: 23-08-2023</p>
-                        <p>Verloopt over 11 dagen</p>
-                    </article>
-                    <article>
-                        <img class="card img" src="../image/book-5.png" alt="">
-                        <h3>Naam boek</h3>
-                        <p>Uitleendatum: 23-08-2023</p>
-                        <p>Verloopt over 11 dagen</p>
-                    </article>
-                    <article>
-                        <img class="card img" src="../image/book-6.png" alt="">
-                        <h3>Naam boek</h3>
-                        <p>Uitleendatum: 23-08-2023</p>
-                        <p>Verloopt over 11 dagen</p>
-                    </article>
-                    <article>
-                        <img class="card img" src="../image/book-7.png" alt="">
-                        <h3>Naam boek</h3>
-                        <p>Uitleendatum: 19-07-2023</p>
-                        <p>Verloopt over 9 dagen</p>
-                    </article>
-                    <article>
-                        <img class="card img" src="../image/book-8.png" alt="">
-                        <h3>Naam boek</h3>
-                        <p>Uitleendatum: 13-08-2023</p>
-                        <p>Verloopt over 23 dagen</p>
-                    </article>
-                </section>
-            </article>
+            <section class="filters">
+                <label for="filters">Filters:</label>
+                <select name="filters" id="filters">
+                    <option value="1">Uitleendatum (aflopend)</option>
+                    <option value="2">Uitleendatum (oplopend)</option>
+                    <option value="3">A-Z</option>
+                    <option value="4">Z-A</option>
+                </select>
+            </section>
+            <section id="slider-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-box">
+                                <div class="slider-img">
+                                    <img src="../image/book-1.png" alt="">
+                                </div>
+                                <div class="slider-details">
+                                    <strong>The Art City (2019)</strong>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim, arcu sed
+                                        accumsan mattis, libero sem sollicitudin nulla, sit amet scelerisque sapien sapien
+                                        non
+                                        orci.</p>
+    
+                                    <div class="expiration">
+                                        <p>Uitleendatum: 26 november 2023</p>
+                                        <p>Verloopt over: <span>3 dagen</span></p>
+                                    </div>
+                                    <a href="#"><button class="btn">Meer informatie<i
+                                                class='bx bx-right-arrow-alt'></i></button></a>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-box">
+                                <div class="slider-img">
+                                    <img src="../image/book-2.png" alt="">
+                                </div>
+                                <div class="slider-details">
+                                    <strong>Give Thanks in Everything (2019)</strong>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim, arcu sed
+                                        accumsan mattis, libero sem sollicitudin nulla, sit amet scelerisque sapien sapien
+                                        non
+                                        orci.</p>
+    
+                                    <div class="expiration">
+                                        <p>Uitleendatum: 27 november 2023</p>
+                                        <p>Verloopt over: <span>6 dagen</span></p>
+                                    </div>
+                                    <a href="#"><button class="btn">Meer informatie<i
+                                                class='bx bx-right-arrow-alt'></i></button></a>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-box">
+                                <div class="slider-img">
+                                    <img src="../image/book-3.png" alt="">
+                                </div>
+                                <div class="slider-details">
+                                    <strong>Your Name (2019)</strong>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim, arcu sed
+                                        accumsan mattis, libero sem sollicitudin nulla, sit amet scelerisque sapien sapien
+                                        non
+                                        orci.</p>
+    
+                                    <div class="expiration">
+                                        <p>Uitleendatum: 28 november 2023</p>
+                                        <p>Verloopt over: <span>7 dagen</span></p>
+                                    </div>
+                                    <a href="#"><button class="btn">Meer informatie<i
+                                                class='bx bx-right-arrow-alt'></i></button></a>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-box">
+                                <div class="slider-img">
+                                    <img src="../image/book-4.png" alt="">
+                                </div>
+                                <div class="slider-details">
+                                    <strong>The Art City (2019)</strong>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim, arcu sed
+                                        accumsan mattis, libero sem sollicitudin nulla, sit amet scelerisque sapien sapien
+                                        non
+                                        orci.</p>
+    
+                                    <div class="expiration">
+                                        <p>Uitleendatum: 26 november 2023</p>
+                                        <p>Verloopt over: <span>3 dagen</span></p>
+                                    </div>
+                                    <a href="#"><button class="btn">Meer informatie<i
+                                                class='bx bx-right-arrow-alt'></i></button></a>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-box">
+                                <div class="slider-img">
+                                    <img src="../image/book-5.png" alt="">
+                                </div>
+                                <div class="slider-details">
+                                    <strong>Give Thanks in Everything (2019)</strong>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim, arcu sed
+                                        accumsan mattis, libero sem sollicitudin nulla, sit amet scelerisque sapien sapien
+                                        non
+                                        orci.</p>
+    
+                                    <div class="expiration">
+                                        <p>Uitleendatum: 27 november 2023</p>
+                                        <p>Verloopt over: <span>6 dagen</span></p>
+                                    </div>
+                                    <a href="#"><button class="btn">Meer informatie<i
+                                                class='bx bx-right-arrow-alt'></i></button></a>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-box">
+                                <div class="slider-img">
+                                    <img src="../image/book-6.png" alt="">
+                                </div>
+                                <div class="slider-details">
+                                    <strong>Your Name (2019)</strong>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim, arcu sed
+                                        accumsan mattis, libero sem sollicitudin nulla, sit amet scelerisque sapien sapien
+                                        non
+                                        orci.</p>
+    
+                                    <div class="expiration">
+                                        <p>Uitleendatum: 28 november 2023</p>
+                                        <p>Verloopt over: <span>7 dagen</span></p>
+                                    </div>
+                                    <a href="#"><button class="btn">Meer informatie<i
+                                                class='bx bx-right-arrow-alt'></i></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    effect: "coverflow",
+                    grabCursor: true,
+                    centeredSlides: true,
+                    loop: true,
+                    slidesPerView: "auto",
+                    coverflowEffect: {
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 0,
+                        modifier: 1,
+                        slideShadows: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                });
+            </script>
+    
         </section>
 
     </div>

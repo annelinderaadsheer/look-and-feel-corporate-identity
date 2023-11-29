@@ -127,48 +127,32 @@
     </nav>
 
     <section class="container">
-        <h1>Welkom bij Mijn OBA!</h1>
-        <p>Hier kunt u uw materialen
-            verlengen, reserveringen bekijken en uw uitleengeschiedenis raadplegen.</p>
-        <h3>Primary Button</h3>
-        <a href="#"><button class="btn">Ontdek meer <i class='bx bx-right-arrow-alt'></i></button></a>
-        <h3>Theme Button</h3>
-        <a href="#"><button class="btn themebtn">Inloggen</button></a>
-        <h3>Link Button</h3>
-        <a href="#"><button class="btn linkbtn">Lees meer nieuws van de OBA <i
-                    class='bx bx-right-arrow-alt'></i></button></a>
-        <hr>
-        <h2>Forms</h2>
-        <h3>Search Form</h3>
-        <form class="searchForm">
-            <div>
-                <input type="radio" name="searchForm" value="catalog" checked="checked">
-                <label for="catalog">Zoeken in de catalogus</label><br>
-                <input type="radio" name="searchForm" value="website">
-                <label for="website">Zoeken binnen de site</label>
-            </div>
-            <input class="input-field" value="" type="text" name="query" placeholder="Waar ben je naar op zoek?">
-            <button type="submit" class="btn">Zoeken <i class='bx bx-right-arrow-alt'></i></button>
-        </form>
-        <h3>Filter Form</h3>
-        <select name="filters" id="filters">
-            <option value="1">Uitleendatum (aflopend)</option>
-            <option value="2">Uitleendatum (oplopend)</option>
-            <option value="3">A-Z</option>
-            <option value="4">Z-A</option>
-        </select>
-        <h3>Input Form</h3>
-        <div class="input-wrapper">
-            <div class="input-group">
-                <label for="Gebruikersnaam">Gebruikersnaam</label>
-                <input type="text" id="username" class="input-field" placeholder="Gebruikersnaam">
-            </div>
-
-            <div class="input-group">
-                <label for="Wachtwoord">Wachtwoord</label>
-                <input type="password" id="password" class="input-field" placeholder="Wachtwoord">
-            </div>
-        </div>
+        <article>
+            <h1>Welkom bij Mijn OBA!</h1>
+            <p>Hier kunt u uw materialen
+                verlengen, reserveringen bekijken en uw uitleengeschiedenis raadplegen.</p>
+            <hr>
+        </article>
+        <article class="searchContainer">
+            <h2>Waar bent u naar op zoek?</h2>
+            <form class="searchForm">
+                <div>
+                    <input type="radio" name="searchForm" value="catalog" checked="checked">
+                    <label for="catalog">Zoeken in de catalogus</label><br>
+                    <input type="radio" name="searchForm" value="website">
+                    <label for="website">Zoeken binnen de site</label>
+                </div>
+                <input class="input-field" value="" type="text" name="query" placeholder="Voer een zoekterm in...">
+                <button type="submit" class="btn">Zoeken <i class='bx bx-right-arrow-alt'></i></button>
+            </form>
+            <hr>
+        </article>
+        <h2>Nieuwsbrief</h2>
+        <img src="../image/nieuwsbrief.jpeg" alt="">
+        <p>Nooit meer iets missen? Meld je aan voor een nieuwsbrief van de OBA en blijf op de hoogte van nieuws en leuke
+            activiteiten in Amsterdam. </p>
+        <a href="#"><button class="btn themebtn">Aanmelden</button></a>
+        
     </section>
 
 </body>
