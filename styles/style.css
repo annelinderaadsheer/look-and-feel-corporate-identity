@@ -513,6 +513,67 @@ select option {
     font-weight: var(--secondary-weight);
 }
 
+/* LOGIN PAGINA */
+.loginContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F0F0F0;
+    padding-top: 20px;
+    background-image: url('../image/background-login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.loginWrapper {
+    width: 320px;
+    min-height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.heading {
+    color: #3B3663;
+    margin-bottom: 20px;
+}
+
+.heading p {
+    color: #AAA8BB;
+}
+
+.heading i {
+    font-size: 30px;
+    color: #4D61FC;
+}
+
+label {
+    color: #AAA8BB;
+    font-weight: 400;
+}
+
+.loginRow {
+    min-width: 5px;
+    min-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.loginRow a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: unset;
+}
+
+/* EINDE LOGIN PAGINA */
+
 /* ANNELINDE START */
 
 
