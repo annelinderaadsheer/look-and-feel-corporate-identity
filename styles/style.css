@@ -408,6 +408,7 @@ button:hover {
     font-size: var(--small-text);
     transition: var(--primary-transition);
     border-radius: var(--button-radius);
+    margin-bottom: var(--secondary-space);
 }
 
 .input-group {
