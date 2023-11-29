@@ -85,8 +85,16 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: revert;
+}
+
+.centered {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Start sidebar made by Amber */
@@ -550,11 +558,6 @@ select option {
 .heading i {
     font-size: 30px;
     color: #4D61FC;
-}
-
-label {
-    color: #AAA8BB;
-    font-weight: 400;
 }
 
 .loginRow {
