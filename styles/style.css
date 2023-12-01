@@ -581,12 +581,19 @@ select option {
     cursor: pointer;
     text-decoration: unset;
 }
+
 /* EINDE LOGIN PAGINA */
 
 /* Start page: Welkom/Home */
 
 .searchContainer {
     margin-block: var(--secondary-space);
+}
+
+.banner {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 /* End page: Welkom/Home */
@@ -650,19 +657,20 @@ li.account {
     border-width: 1px;
     border-radius: 10px;
 }
-  ul.account-list {
+
+ul.account-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-  .profile-picture {
+.profile-picture {
     width: 200px;
     height: 200px;
 }
 
-  .themebtn {
+.themebtn {
     color: var(--secondary-color);
     background-color: var(--primary-color);
     height: 35px;
@@ -705,6 +713,7 @@ li.account {
     .swiper-slide {
         width: 230px !important;
     }
+
     .filters {
         right: unset;
     }
