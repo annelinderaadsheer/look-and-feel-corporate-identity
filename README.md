@@ -22,14 +22,6 @@
 ## 📝Beschrijving
 Als opdracht moesten we een deel van een website bouwen voor een echte opdrachtgever. We konden kiezen uit 5 verschillende opdrachtgevers met allemaal een ander soort opdracht. Nadat we deze uitgekozen hadden, hebben we een briefing gehad en werd er uitgelegd wat er van ons werd verwacht. Hierna hebben wij met z’n drieën een groepje gevormd en besloten om bepaalde onderdelen van deze opdracht samen uit te voeren. We hebben hiervoor gekozen omdat we zo tijdens deze opdracht veel van elkaar kunnen leren, en ons per persoon goed kunnen focussen op onze taak om uiteindelijk beter resultaat te leveren.
 
-### Debriefing
-
-We hebben de feedback van Mark op onze debrief meegenomen en gebruikt om onze debrief te verbeteren.
-<img width="1144" alt="image" src="https://github.com/OvenMagnetron/oba/assets/143999685/81e5e899-b272-4ef0-950c-22e8501f32fc">
-
-### Debrief Oba
-[DebriefOba.pdf](https://github.com/OvenMagnetron/oba/files/12829578/DebriefOba.pdf)
-
 ## 🖇Gebruik
 
 * Open je favoriete webbrowser, zoals Google Chrome, Mozilla Firefox, Safari, etc.
